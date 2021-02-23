@@ -49,6 +49,14 @@ export class AppComponent {
           else{
             play2=0;
           }
+
+          //pemenangnya
+          if(play1==4){
+            alert("Player 1 wins");
+          }
+          if(play2==4){
+            alert("Player 2 wins");
+          }
         }
       }
     }
