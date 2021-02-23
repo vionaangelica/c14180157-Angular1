@@ -21,12 +21,39 @@ export class AppComponent {
   turn = 1;
 
   ok() {
-    if (this.turn == 1) {
+    if(this.bintang[this.baris][this.kolom] == '*'){
+      if (this.turn == 1) {
       this.bintang[this.baris][this.kolom] = 'x';
       this.turn=2;
-    } else if (this.turn == 2) {
+      } else if (this.turn == 2) {
       this.bintang[this.baris][this.kolom] = 'o';
       this.turn=1;
+      }
+
+      var i: number = 0
+      var j: number = 0
+      for (i = 0; i < 5; i++) {
+        var play1: number = 0
+        var play2: number = 0
+        for (j = 0; j < 5; j++) {
+          if (this.bintang[i][j]=="x"){
+            play1++
+          }
+          else{
+            play1=0;
+          }
+
+          if(this.bintang[i][j]=="o"){
+            play2++;
+          }
+          else{
+            play2=0;
+          }
+        }
+      }
+    }
+    else{
+      alert("Tempat ini sudah terisi")
     }
   }
 }
