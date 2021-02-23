@@ -25,7 +25,7 @@ export class AppComponent  {
       this.bintang[this.baris][this.kolom] == 'x'
     }
     else if(this.turn==2){
-      this.bintang[this.baris][this.kolom] == 'x'
+      this.bintang[this.baris][this.kolom] == 'o'
     }
   }
 }
