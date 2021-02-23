@@ -51,11 +51,13 @@ export class AppComponent {
           }
 
           //pemenangnya
-          if(play1==4){
+          if(play1 == 4){
             alert("Player 1 wins");
+            this.reset()
           }
-          if(play2==4){
+          if(play2 == 4){
             alert("Player 2 wins");
+            this.reset()
           }
         }
       }
@@ -63,5 +65,18 @@ export class AppComponent {
     else{
       alert("Tempat ini sudah terisi")
     }
+  }
+
+  reset(){
+     var i: number = 0
+      var j: number = 0
+      for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            this.bintang[i][j]='*';
+        }
+      }
+      this.kolom =0;
+      this.baris=0;
+      this.turn=1;
   }
 }
