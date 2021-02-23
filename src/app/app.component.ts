@@ -22,11 +22,10 @@ export class AppComponent {
 
   ok() {
     if (this.turn == 1) {
-      this.bintang[this.baris][this.kolom] == 'x';
+      this.bintang[this.baris][this.kolom] = 'x';
       this.turn=2;
-
     } else if (this.turn == 2) {
-      this.bintang[this.baris][this.kolom] == 'o';
+      this.bintang[this.baris][this.kolom] = 'o';
       this.turn=1;
     }
   }
