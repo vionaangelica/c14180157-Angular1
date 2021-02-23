@@ -3,8 +3,12 @@
 	Game sama 4
 </p>
 
-<div *ngFor="let star in bintang">
-	<span *ngFor="let item in star">
+<div *ngFor="let stars in bintang">
+  <span *ngFor="let item in stars">
   {{item}}
   </span>
 </div>
+
+Baris : <input type="text" [(ngModel)]="baris"><br>
+Kolom : <input type="text" [(ngModel)]="kolom"><br>
+
