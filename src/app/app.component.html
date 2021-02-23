@@ -1,4 +1,10 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Game sama 4
+	Game sama 4
 </p>
+
+<div *ngFor="let star in bintang">
+	<span *ngFor="let item in star">
+  {{item}}
+  </span>
+</div>
